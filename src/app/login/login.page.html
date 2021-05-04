@@ -1,0 +1,24 @@
+<ion-header >
+  <ion-toolbar color="warning">
+    <ion-title>E-Books</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="secondary">
+  <ion-card color="primary">
+    <ion-card-header>
+      <ion-card-title>E-Books Login</ion-card-title>
+    </ion-card-header>
+  
+    <ion-card-content>
+      <img src="assets/f.png" alt="">
+      <ion-label>Enter username</ion-label>
+      <ion-input [(ngModel)]="user.email" placeholder="Enter userName"></ion-input>
+      <iom-label>Enter Password</iom-label>
+       <ion-input [(ngModel)]="user.password" type="password" placeholder="Password"></ion-input>
+    </ion-card-content>
+    <ion-button color="success" (click)="log()">Login</ion-button>
+    <ion-button color="warning" (click)="register()">register</ion-button>
+  </ion-card>
+</ion-content>
+
